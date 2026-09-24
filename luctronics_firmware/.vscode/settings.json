@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "/home/luc/DEV_ESP32 firmwares/luctronics_firmware/platformio",
+    "cmake.autoDetectSourceDirectory": false
+}

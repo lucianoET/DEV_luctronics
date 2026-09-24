@@ -1,0 +1,19 @@
+# Repo guarda-chuva: so a estrutura e o que nao tem repo proprio.
+# Os repos aninhados vivem nos seus proprios remotes (ver README).
+/luctronics-site/
+/luctronics_firmware/esphome/
+/luctronics_firmware/platformio/
+/luctronics_firmware/RuView-main/
+/luctronics_firmware/RuView-upstream/
+
+# material local, fora do versionamento
+/.reference/
+/.delete/
+.remember/
+.claude-flow/
+.claude/settings.local.json
+
+# build
+build/
+.pio/
+.esphome/
