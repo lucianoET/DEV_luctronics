@@ -31,8 +31,10 @@ conteúdo. Detalhes em `luctronics_firmware/README.md`.
 
 ## Pendências
 
+Não há TODO central: cada projeto mantém o seu (`platformio/todo.md` + `ROADMAP.md`,
+`luctronics-site/TODO.md`, seção **Pendências** no `.md` de cada node ESPHome).
+
 - **`luctronics_firmware/esphome/.git` carrega ~722 MB** de objetos órfãos do
   cache ESP-IDF que foi commitado por engano — ver a memória do projeto.
 - `.reference/cmasm-erp-*` e `erp-cmms-*` são do CMASM.ERP; se `~/cmms-monorepo`
   virar o lar desse projeto, eles vão junto.
-# DEV_luctronics
