@@ -4,7 +4,7 @@ Monorepo Luctronics. Cada pasta é independente — não há build unificado.
 
 | Pasta | O que é | Repo |
 |---|---|---|
-| `luctronics_firmware/` | ⭐ firmwares ESP32/ESP32-C3 — ver README próprio | 2 repos + 3 sem git |
+| `luctronics_firmware/` | ⭐ firmwares ESP32/ESP32-C3 — ver README próprio | 2 repos próprios + o resto neste repo |
 | `luctronics-site/` | site institucional (HTML estático + Netlify) | `lucianoET/luctronics-site` |
 | `.reference/` | material de consulta e projetos arquivados — ver README próprio |
 | `.delete/` | staging de remoção, nada apagado — ver `MANIFEST.md` |
@@ -22,16 +22,15 @@ GPS, paiol. Duas implementações do mesmo hardware, mais nodes à parte:
 |---|---|---|
 | `esphome/` | **preferido**, roda no HAOS | `lucianoET/workspace_comunicador` |
 | `platformio/` | funciona sem HAOS, publica em MQTT cru | `lucianoET/aguada-firmware` |
-| `fonoclama/` | avisos wireless — C3 SuperMini + OLED + áudio por WebSocket | ⚠ sem git |
-| `sentinela/` | caracterização de sensores IR e som (ADC1, 200 Hz) | ⚠ sem git |
-| `RuView-main/` | WiFi sensing por CSI — **de terceiros**, entrega no HA | ⚠ sem git |
+| `fonoclama/` | avisos wireless — C3 SuperMini + OLED + áudio por WebSocket | este repo |
+| `sentinela/` | caracterização de sensores IR e som (ADC1, 200 Hz) | este repo |
+| `RuView-main/` | WiFi sensing por CSI — **de terceiros**, entrega no HA | ⚠ sem git, ignorado |
 
 O nome do repo do `esphome/` (`workspace_comunicador`) é herança e não bate com o
 conteúdo. Detalhes em `luctronics_firmware/README.md`.
 
 ## Pendências
 
-- **`fonoclama/` e `sentinela/` não estão em git.** Exemplar único em disco.
 - **`luctronics_firmware/esphome/.git` carrega ~722 MB** de objetos órfãos do
   cache ESP-IDF que foi commitado por engano — ver a memória do projeto.
 - `.reference/cmasm-erp-*` e `erp-cmms-*` são do CMASM.ERP; se `~/cmms-monorepo`

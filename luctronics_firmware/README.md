@@ -12,8 +12,8 @@ para outros tipos de node: qualidade do ar, GPS, paiol.
 |---|---|---|
 | `esphome/` | telemetria via ESPHome — **preferido** | `lucianoET/workspace_comunicador` |
 | `platformio/` | telemetria em C++, sem HAOS | `lucianoET/aguada-firmware` |
-| `fonoclama/` | avisos wireless, node à parte | ⚠ sem git |
-| `sentinela/` | caracterização de sensores, node à parte | ⚠ sem git |
+| `fonoclama/` | avisos wireless, node à parte | `DEV_luctronics` |
+| `sentinela/` | caracterização de sensores, node à parte | `DEV_luctronics` |
 | `RuView-main/` | sensoriamento por CSI de WiFi — **de terceiros**, 165 MB | ⚠ sem git |
 
 ## Duas implementações do mesmo sistema
@@ -89,6 +89,8 @@ avisos. Não mede nada.
 
 `hw_test/hw_test.ino` é o diagnóstico de G6/G7 (I2C) do C3 SuperMini — mesmo
 defeito de GPIO6/7 que aparece no `gps_tracker`. `audio_test/` exercita o I2S.
+`slave_wifi/` é o firmware do slave (captive portal + MQTT + WebSocket), que
+estava perdido no repo do ESPHome como `slave_test.txt`.
 
 ### `sentinela/`
 
