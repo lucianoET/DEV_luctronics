@@ -13,6 +13,7 @@ para outros tipos de node: qualidade do ar, GPS, paiol.
 | `esphome/` | telemetria via ESPHome — **preferido** | `lucianoET/workspace_comunicador` |
 | `platformio/` | telemetria em C++, sem HAOS | `lucianoET/aguada-firmware` |
 | `aguada-web/` | interface web do Aguada (FastAPI, Docker) | `lucianoET/aguada-web` |
+| `homeassistant/` | `/config` do HA do Aguada (templates, dashboards, helpers) | ⚠ sem git, ignorado |
 | `fonoclama/` | avisos wireless, node à parte | `DEV_luctronics` |
 | `sentinela/` | caracterização de sensores, node à parte | `DEV_luctronics` |
 | `RuView-main/` | sensoriamento por CSI de WiFi — **de terceiros**, 165 MB | ⚠ sem git |
@@ -78,6 +79,12 @@ Assistant, então HA e web mostram os mesmos dados.
 Os parâmetros dos reservatórios têm **fonte única**: `platformio/tools/reservoirs.yaml`.
 Depois de editar, rode `platformio/tools/sync_reservoirs.sh` para atualizar a cópia
 em `aguada-web/backend/`.
+
+### `homeassistant/` — config do Home Assistant do Aguada
+
+Fonte do `/config` do HA (templates, dashboards, helpers, automações). Veio de
+`~/DEV_HAOS/haos-master/homeassistant`, que agora é um symlink para cá — os docs e o
+`tools/deploy_to_haos.ps1` de lá continuam funcionando. Ainda sem repo git.
 
 ## Em aberto
 

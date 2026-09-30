@@ -8,6 +8,7 @@
 /luctronics_firmware/RuView-upstream/
 
 # material local, fora do versionamento
+/luctronics_firmware/homeassistant/
 /.reference/
 /.delete/
 .remember/
