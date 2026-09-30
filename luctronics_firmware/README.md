@@ -12,6 +12,7 @@ para outros tipos de node: qualidade do ar, GPS, paiol.
 |---|---|---|
 | `esphome/` | telemetria via ESPHome — **preferido** | `lucianoET/workspace_comunicador` |
 | `platformio/` | telemetria em C++, sem HAOS | `lucianoET/aguada-firmware` |
+| `aguada-web/` | interface web do Aguada (FastAPI, Docker) | `lucianoET/aguada-web` |
 | `fonoclama/` | avisos wireless, node à parte | `DEV_luctronics` |
 | `sentinela/` | caracterização de sensores, node à parte | `DEV_luctronics` |
 | `RuView-main/` | sensoriamento por CSI de WiFi — **de terceiros**, 165 MB | ⚠ sem git |
@@ -67,6 +68,16 @@ Sem HAOS: ignore o bridge, consuma os tópicos `aguada/...` direto.
 
 Build: `~/.platformio/penv/bin/pio` (não está no PATH).
 Convenções e comandos: `platformio/CLAUDE.md`.
+
+### `aguada-web/` — interface web do mesmo sistema
+
+Backend FastAPI + SQLite + frontend estático (Docker). Não lê a USB: consome os
+pacotes crus do gateway em `aguada/gateway/rx`, no mesmo broker MQTT do Home
+Assistant, então HA e web mostram os mesmos dados.
+
+Os parâmetros dos reservatórios têm **fonte única**: `platformio/tools/reservoirs.yaml`.
+Depois de editar, rode `platformio/tools/sync_reservoirs.sh` para atualizar a cópia
+em `aguada-web/backend/`.
 
 ## Em aberto
 

@@ -22,6 +22,7 @@ GPS, paiol. Duas implementações do mesmo hardware, mais nodes à parte:
 |---|---|---|
 | `esphome/` | **preferido**, roda no HAOS | `lucianoET/workspace_comunicador` |
 | `platformio/` | funciona sem HAOS, publica em MQTT cru | `lucianoET/aguada-firmware` |
+| `aguada-web/` | interface web do Aguada (FastAPI + SQLite, Docker) — mesmos dados do HA via MQTT | `lucianoET/aguada-web` |
 | `fonoclama/` | avisos wireless — C3 SuperMini + OLED + áudio por WebSocket | este repo |
 | `sentinela/` | caracterização de sensores IR e som (ADC1, 200 Hz) | este repo |
 | `RuView-main/` | WiFi sensing por CSI — **de terceiros**, entrega no HA | ⚠ sem git, ignorado |
