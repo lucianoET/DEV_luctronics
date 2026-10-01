@@ -1,0 +1,116 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]: 💧 AGUADA
+    - navigation [ref=e4]:
+      - link "Painel" [ref=e5] [cursor=pointer]:
+        - /url: painel.html
+      - link "SCADA" [ref=e6] [cursor=pointer]:
+        - /url: scada.html
+      - link "Dados" [ref=e7] [cursor=pointer]:
+        - /url: dados.html
+      - link "Relatório" [ref=e8] [cursor=pointer]:
+        - /url: relatorio_tabelas.html
+      - link "Alertas" [ref=e9] [cursor=pointer]:
+        - /url: alerts.html
+      - link "Manutenção" [ref=e10] [cursor=pointer]:
+        - /url: manutencao.html
+      - link "Qualidade" [ref=e11] [cursor=pointer]:
+        - /url: qualidade.html
+      - link "Esgoto" [ref=e12] [cursor=pointer]:
+        - /url: ete.html
+      - link "Documentação" [ref=e13] [cursor=pointer]:
+        - /url: documentacao.html
+    - generic [ref=e14]:
+      - button "Alternar Tema Claro/Escuro" [ref=e15] [cursor=pointer]
+      - generic [ref=e18]: Buscando rede...
+  - generic [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: Volume Total / Vol Max
+          - generic [ref=e29]: 0 / 0 m³
+        - generic [ref=e30]: 0 res
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: Aporte
+          - generic [ref=e35]: 342 m³
+        - generic [ref=e36]: Entrada
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: Consumo
+          - generic [ref=e40]: 315 m³
+        - generic [ref=e41]: Saída
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: Retenção
+          - generic [ref=e45]: +27 m³
+        - generic [ref=e46]: Balanço
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: Alertas
+          - generic [ref=e50]: 0 ativos
+        - generic [ref=e51]: Tudo Normal
+    - generic [ref=e52]:
+      - generic [ref=e54]:
+        - generic [ref=e55]: Reservatórios
+        - generic [ref=e58]: "Média: 0%"
+      - generic [ref=e61]:
+        - generic [ref=e62]: Mapa da Rede
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - button "Res" [ref=e67] [cursor=pointer]
+            - button "Bomb" [ref=e68] [cursor=pointer]
+            - button "Válv" [ref=e69] [cursor=pointer]
+            - button "Hidr" [ref=e70] [cursor=pointer]
+            - button "Esg" [ref=e71] [cursor=pointer]
+          - button "Expandir mapa" [ref=e72] [cursor=pointer]
+      - generic [ref=e80]:
+        - generic [ref=e81]: Bombas
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: CB3
+            - generic [ref=e89]: Nenhuma
+          - generic [ref=e90]:
+            - generic [ref=e91]: CB2
+            - generic [ref=e92]: Nenhuma
+          - generic [ref=e93]:
+            - generic [ref=e94]: CBIF
+            - generic [ref=e95]: Nenhuma
+      - generic [ref=e96]:
+        - generic [ref=e97]: Válvulas
+        - generic [ref=e102]: Sem registros
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]: Hidrômetros
+          - link "Análise →" [ref=e109] [cursor=pointer]:
+            - /url: dados.html
+        - table [ref=e111]:
+          - rowgroup [ref=e112]:
+            - row [ref=e113]:
+              - columnheader "Medidor" [ref=e114]
+              - columnheader "Leitura (m³)" [ref=e115]
+              - columnheader "Δ Dia" [ref=e116]
+              - columnheader "Atualização" [ref=e117]
+          - rowgroup [ref=e118]:
+            - row [ref=e119]:
+              - cell "Sem leituras registradas" [ref=e120]
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: Saneamento
+          - link "ETE →" [ref=e126] [cursor=pointer]:
+            - /url: ete.html
+        - generic [ref=e127]:
+          - generic [ref=e128] [cursor=pointer]:
+            - generic [ref=e129]:
+              - generic [ref=e130]: ETE Principal
+              - generic [ref=e131]: Tratamento de efluentes
+            - generic [ref=e132]: Normal
+          - generic [ref=e133]:
+            - generic [ref=e134]: Nível Equalização
+            - text: 45%
+          - generic [ref=e135]:
+            - generic [ref=e136]: Odor Biogás
+            - generic [ref=e137]: Baixo
+          - generic [ref=e138]:
+            - generic [ref=e139]: Inspeção Fossas
+            - generic [ref=e140]: Sem alertas
