@@ -19,3 +19,6 @@
 build/
 .pio/
 .esphome/
+
+# Screenshots/snapshots do Playwright MCP
+.playwright-mcp/
